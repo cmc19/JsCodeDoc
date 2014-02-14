@@ -1,0 +1,21 @@
+﻿<div class="function panel panel-default">
+    <div class="panel-heading">
+        <h4>
+            {name}
+            <small style="float:right;">Function</small>
+        </h4>
+    </div>
+    <div class="panel-body">
+        {#d.signature}
+        <span>{summary}</span>
+        <div>
+            {#param}
+            <div>{_name}</div>
+            {/param}
+        </div>
+        {/d.signature}
+        {#sample}
+        <pre><code class="javascript">{sample}</code></pre>
+        {/sample}
+    </div>
+</div>
